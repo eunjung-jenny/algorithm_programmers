@@ -1,12 +1,10 @@
 function solution(array, commands) {
-  let answer = [];
-  for (const sub_arr of commands) {
-    const n_arr = array.slice(sub_arr[0] - 1, sub_arr[1]);
-    const sort_arr = n_arr.sort();
-    const target = sort_arr[sub_arr[2] - 1];
-    answer.push(target);
-  }
-  return answer;
+  return commands.map(
+    (command) =>
+      array
+        .slice(command[0] - 1, command[1])
+        .sort((a, b) => a - b)[command[2] - 1]
+  );
 }
 
 array = [1, 5, 2, 6, 3, 7, 4];

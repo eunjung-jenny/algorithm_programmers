@@ -29,6 +29,8 @@
 - `.repeat([반복 횟수])`
 - `.startsWith([대상 문자열])`
 - `.includes([대상 문자열])`
+- `.toLowerCase()`
+- `.split([기준 문자열])`
 
 ## for statement
 

@@ -15,3 +15,9 @@ for (let i = 0; i < N.length; i++) {
     console.log(`${i + 1}: fail`);
   }
 }
+
+// function solution(n) {
+//   return (n + "")
+//     .split("")
+//     .reduce((acc, curr) => acc + parseInt(curr), 0);
+// }

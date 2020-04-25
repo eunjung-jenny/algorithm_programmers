@@ -22,6 +22,10 @@
 - `.filter(elem => [실행 함수])` => 각 원소에 해당 함수 실행
 - `.fill([삽입할 값], [시작 위치], [마지막 위치(불포함)])`
 - `let [배열 이름] = new Array([길이]).fill([삽입할 값], [시작 위치], [마지막 위치(불포함)])`
+- `.reduce(callback, [시작값: optional])`
+  - callback : (acc, curr) => [작업내용 및 반환값])
+    - acc: 지금까지의 값
+    - curr: array에서 받은 값
 
 ## String
 

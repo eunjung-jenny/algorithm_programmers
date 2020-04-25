@@ -3,7 +3,7 @@
 ## 연산
 
 - `parseInt(10/3)` => 나누기 연산 결과의 몫만 반환하는 연산자가 없으므로 `parseInt` 사용
-- `Math.min([숫자 리스트])`, `Math.max([숫자 리스트])`, `Math.ceil(실수)` 등
+- `Math.min([숫자 리스트])`, `Math.max([숫자 리스트])`, `Math.ceil([실수])`, `Math.sqrt([숫자])` 등
 
 ## Array
 
@@ -53,7 +53,13 @@ for (let i = 0; i < 10; i++) {
 ## 형 변환
 
 - `Number([형 변환을 할 데이터])`
+- `parseInt([형 변환을 할 데이터])`
+- `parseFloat([형 변환을 할 데이터])`
 - `String([형 변환을 할 데이터])`
+
+## 데이터 타입 체크
+
+- `Number.isInteger([데이터])` => 데이터가 integer 타입인지에 대한 결과를 boolean 값으로 반환
 
 ## 논리 연산자
 

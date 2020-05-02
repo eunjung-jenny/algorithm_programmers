@@ -23,7 +23,7 @@ function solution(a, b) {
     "thu",
   ];
   const diff_days =
-    days.slice(0, a - 1).reduce((a, b) => a + b) + b - 1;
+    days.slice(0, a - 1).reduce((a, b) => a + b, 0) + b - 1;
   return date[diff_days % 7].toUpperCase();
 }
 
@@ -38,3 +38,15 @@ for (let i = 0; i < a.length; i++) {
     console.log(`${i + 1}: fail`);
   }
 }
+
+// function getDayName(a,b){
+//   var arr = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+//   var date = new Date(`2016-${a}-${b}`);
+// var day = date.getDay()
+//   return arr[day];
+// }
+
+// function getDayName(a,b){
+//   var date = new Date(2016, (a - 1), b);
+//     return date.toString().slice(0, 3).toUpperCase();
+// }
